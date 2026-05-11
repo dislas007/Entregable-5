@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Diego Islas">
+  <meta name="copyright" content="© 2025 Cinépsis">
+  <title>Cinépsis</title>
+
+
+  <!-- Fuentes y iconos -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Open+Sans">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="social-icons">
+       <a href="https://www.facebook.com/share/1Fcp58cW9s/?mibextid=wwXIfr" aria-label="Facebook">
+              <i class="fab fa-facebook"></i>
+                </a>
+
+       <a href="https://www.instagram.com/diegoo.islas?igsh=MXF5ZXp5d2Uzemw3Mg==" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+                </a>
+    </div>
+    <a href="#" class="search"><i class="fa fa-search"></i></a>
+  </nav>
+
+<!-- HEADER-->
+<header class="hero">
+  
+  <!-- Carrusel -->
+  <div class="hero-carousel">
+    <div class="slide active">
+      <img src="IMG/Cine.jpg" alt="hero 1">
+      <div class="hero-content">
+        <h1>C I N É P S I S</h1>
+        <h3 style="background: rgba(0, 0, 0, 0.5);">Bienvenidos a <span>C I N É P S I S<S></S></span></h3> 
+        <button onclick="toggleModal('contacto')">CONTACTO</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="IMG/Teatro.jpg" alt="hero 2">
+      <div class="hero-content">
+        <h1>C I N É P S I S</h1>
+       <h3 style="background: rgba(0, 0, 0, 0.5);">Bienvenidos a <span>C I N É P S I S<S></S></span></h3> 
+        <button onclick="toggleModal('contacto')">CONTACTO</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Main content -->
+  <main class="content">
+    <!-- Blog posts -->
+    <section class="blog">
+      <article>
+        <h3>Orange Clockwork</h3>
+        <h5>By Stanley Kubrick <span>, 1971</span></h5>
+        <img src="IMG/Clockwork orange.jpg" alt="Orange Clockwork">
+        <p>En una Gran Bretaña del futuro cercano, el joven Alexander DeLarge y sus amigos se divierten golpeando y violando a quien les place. Cuando no está destruyendo vidas ajenas, Alex se deleita con la música de Beethoven. El estado, deseoso de combatir la delincuencia juvenil, le ofrece a Alex, encarcelado, la opción de someterse a un procedimiento invasivo que le privará de toda autonomía personal. En una época donde la conciencia es un bien preciado, ¿podrá Alex cambiar de opinión?</p>
+        <div class="actions">
+          <button onclick="likeFunction(this)"><i class="fa fa-thumbs-up"></i> Like</button>
+          <button onclick="toggleComments('demo1')">Vistas <span>+ 500K</span></button>
+        </div>
+        <div id="demo1" class="vistas">
+          <p>Calificación: 5/5 ★</p>
+        </div>
+      </article>
+
+      <article>
+        <h3>Scarface</h3>
+        <h5>Brian de Palma<span>, 1983</span></h5>
+        <img src="IMG/Scarface.jpg" alt="Scarface">
+        <p>Tras obtener una tarjeta de residencia a cambio de asesinar a un funcionario del gobierno cubano, Tony Montana se adueña del narcotráfico en Miami. Asesina brutalmente a cualquiera que se interponga en su camino, y con el tiempo, Tony se convierte en el mayor narcotraficante del estado, controlando casi toda la cocaína que pasa por Miami. Pero la creciente presión policial, las guerras con los cárteles colombianos y su propia paranoia, alimentada por las drogas, alimentan las llamas de su eventual caída.</p>
+        <div class="actions">
+          <button onclick="likeFunction(this)"><i class="fa fa-thumbs-up"></i> Like</button>
+          <button onclick="toggleComments('demo2')">Vistas <span>+ 500k</span></button>
+        </div>
+        <div id="demo2" class="vistas">
+          <p>Calificación: 5/5 ★</p>
+        </div>
+      </article>
+
+            <article>
+        <h3>Interstella 5555</h3>
+        <h5>Leiji Matsumoto, Daisuke Nishio, Kazuhisa Takenouchi, Hirotoshi Rissen.<span>, 2003</span></h5>
+        <img src="IMG/Interstella 5555.jpg" alt="Interstella 5555">
+        <p>Cuatro talentosos músicos alienígenas son secuestrados por un productor discográfico que los disfraza de humanos. Shep, un piloto espacial enamorado de la bajista Stella, los sigue a la Tierra. Reprogramados para olvidar sus verdaderas identidades y renombrados como The Crescendolls, el grupo rápidamente se convierte en un gran éxito tocando pop corporativo sin alma. En un concierto, Shep logra liberar a todos los músicos excepto a Stella, y la banda emprende la búsqueda de redescubrir quiénes son realmente — y rescatar a Stella.</p>
+        <div class="actions">
+          <button onclick="likeFunction(this)"><i class="fa fa-thumbs-up"></i> Like</button>
+          <button onclick="toggleComments('demo2')">Vistas <span>+ 200k</span></button>
+        </div>
+        <div id="demo2" class="vistas">
+          <p>Calificación: 5/5 ★</p>
+        </div>
+      </article>
+
+            <article>
+        <h3>Coraline</h3>
+        <h5>Henry Selick<span>, 2009</span></h5>
+        <img src="IMG/Coraline.png" alt="Scarface">
+        <p>Deambulando por su vieja y destartalada casa en su aburrido nuevo pueblo, Coraline, de 11 años, descubre una puerta oculta que la lleva a una versión extrañamente idealizada de su vida. Para permanecer en la fantasía, debe hacer un sacrificio aterradoramente real.</p>
+        <div class="actions">
+          <button onclick="likeFunction(this)"><i class="fa fa-thumbs-up"></i> Like</button>
+          <button onclick="toggleComments('demo2')">Vistas <span>+ 500k</span></button>
+        </div>
+        <div id="demo2" class="vistas">
+          <p>Calificación: 5/5 ★</p>
+        </div>
+      </article>
+
+            <article>
+        <h3>Lilo & Stitch</h3>
+        <h5>Chris Sanders, Dean DeBlois<span>, 2002</span></h5>
+        <img src="IMG/Lilo & Stitch.jpg" alt="Lilo & Stitch">
+        <p>Mientras Stitch, un experimento genético fugitivo de un planeta lejano, causa estragos en las islas hawaianas, se convierte en el travieso "cachorro" extraterrestre adoptado de una niña independiente llamada Lilo y aprende sobre la lealtad, la amistad y la 'ohana, la tradición hawaiana de la familia.</p>
+        <div class="actions">
+          <button onclick="likeFunction(this)"><i class="fa fa-thumbs-up"></i> Like</button>
+          <button onclick="toggleComments('demo2')">Vistas <span>+ 800k</span></button>
+        </div>
+        <div id="demo2" class="vistas">
+          <p>Calificación: 4/5 ★</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="card">
+        <h4>By Diego Islas</h4>
+        <p>Plataforma y cadena de cines donde contiene las mejores obras cinematográficas en la historia del cine.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4>Subscribete</h4>
+        <input type="email" placeholder="Enter e-mail">
+        <button onclick="toggleModal('subscribete')">Subscribete</button>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Modal -->
+  <div id="contacto" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="toggleModal('contacto')">&times;</span>
+      <h2>SUBSCRIBETE</h2>
+      <input type="email" placeholder="Enter e-mail">
+      <button onclick="toggleModal('contacto')">Subscribete</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <button onclick="scrollToTop()"><i class="fa fa-arrow-up"></i> INICIO</button>
+    <p>© 2025 Cinépsis by Diego Islas</p>
+  </footer>
+
+   <p class="copyright">&copy;2025 CINÉPSIS</p>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
